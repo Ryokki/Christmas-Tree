@@ -30,7 +30,8 @@ const App: React.FC = () => {
   // Music State
   // Atmospheric, cinematic Christmas track (Mystery/Magical vibe)
   // "Christmas Magic" - Celesta & Orchestral
-  const MUSIC_URL = "https://cdn.pixabay.com/audio/2020/12/16/audio_823f66c071.mp3";
+  // CDN fallback that does not require referer/auth
+  const MUSIC_URL = "https://cdn.pixabay.com/download/audio/2022/11/23/audio_3ec52ffb62.mp3?filename=christmas-background-ambient-magic-12699.mp3";
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
 
   // Wrap in useCallback to prevent new function creation on every render
